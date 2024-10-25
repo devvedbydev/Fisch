@@ -3,7 +3,7 @@ local function log(message) print("[AutoSell] " .. message) end
 
 local function startAutoSell()
     log("Auto-sell started.")
-    while _G.autoSell do
+    while _G.autosell do
         local success, errorMessage=pcall(function()
             local sellFunction=workspace:WaitForChild("world"):WaitForChild("npcs"):WaitForChild("Marc Merchant"):WaitForChild("merchant"):WaitForChild("sell")
             if sellFunction then
