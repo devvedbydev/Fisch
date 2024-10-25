@@ -3,7 +3,7 @@ local VirtualInputManager = game:GetService("VirtualInputManager")
 local LocalPlayer = game.Players.LocalPlayer
 
 local function shakeButton(button)
-    if _G.autoShake then
+    if _G.autoshake then
         task.wait(0.1)
         local pos = button.AbsolutePosition
         local size = button.AbsoluteSize
